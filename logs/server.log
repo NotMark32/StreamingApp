@@ -1,0 +1,696 @@
+2026-06-04 13:37:06 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:37:06 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:37:06 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:37:06 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-240p.mp4
+2026-06-04 13:37:07 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-240p.mp4
+2026-06-04 13:37:07 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-240p.avi
+2026-06-04 13:37:07 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-240p.avi
+2026-06-04 13:37:07 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-240p.mkv
+2026-06-04 13:37:09 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-240p.mkv
+2026-06-04 13:37:09 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-360p.mp4
+2026-06-04 13:37:10 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-360p.mp4
+2026-06-04 13:37:10 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-360p.avi
+2026-06-04 13:37:11 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-360p.avi
+2026-06-04 13:37:11 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-360p.mkv
+2026-06-04 13:37:13 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-360p.mkv
+2026-06-04 13:37:13 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-480p.mp4
+2026-06-04 13:37:15 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-480p.mp4
+2026-06-04 13:37:15 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-480p.avi
+2026-06-04 13:37:16 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-480p.avi
+2026-06-04 13:37:16 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-480p.mkv
+2026-06-04 13:37:18 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-480p.mkv
+2026-06-04 13:37:18 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-720p.mp4
+2026-06-04 13:37:22 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-720p.mp4
+2026-06-04 13:37:22 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-720p.avi
+2026-06-04 13:37:24 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-720p.avi
+2026-06-04 13:37:24 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-720p.mkv
+2026-06-04 13:37:27 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-720p.mkv
+2026-06-04 13:37:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:37:27 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-1080p.avi
+2026-06-04 13:37:30 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-1080p.avi
+2026-06-04 13:37:30 [Thread-0] INFO  c.s.s.VideoConverter - Δημιουργία: BigBuckBunny-1080p.mkv
+2026-06-04 13:37:36 [Thread-0] INFO  c.s.s.VideoConverter - ✅ Επιτυχής μετατροπή: videos\BigBuckBunny-1080p.mkv
+2026-06-04 13:37:36 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:37:36 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:37:36 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:38:20 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:38:20 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:38:21 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.69
+2026-06-04 13:38:21 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.69 Mbps
+2026-06-04 13:38:39 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:38:39 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:38:54 [Thread-2] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:38:54 [Thread-2] ERROR c.s.s.StreamingServer - Αδύνατη η εκκίνηση server: Address already in use: bind
+2026-06-04 13:40:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: DISCONNECT
+2026-06-04 13:40:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-04 13:40:08 [Thread-1] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:40:08 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:40:27 [Thread-3] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:40:27 [Thread-3] ERROR c.s.s.StreamingServer - Αδύνατη η εκκίνηση server: Address already in use: bind
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:40:37 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:41:08 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:41:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:41:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|7.58
+2026-06-04 13:41:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 7.58 Mbps
+2026-06-04 13:41:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:41:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:41:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-1080p.mkv|RTP/UDP
+2026-06-04 13:41:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-1080p.mkv via RTP/UDP
+2026-06-04 13:41:51 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-1080p.mkv
+2026-06-04 13:41:56 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-1080p.mkv|RTP/UDP
+2026-06-04 13:41:56 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-1080p.mkv via RTP/UDP
+2026-06-04 13:42:05 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-1080p.mkv
+2026-06-04 13:43:33 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 13:43:33 [Thread-1] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:43:33 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:43:39 [Thread-2] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:43:52 [Thread-2] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:43:52 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:43:53 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.75
+2026-06-04 13:43:53 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.75 Mbps
+2026-06-04 13:43:55 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:43:55 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:44:01 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-1080p.mkv|TCP
+2026-06-04 13:44:01 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-1080p.mkv via TCP
+2026-06-04 13:44:10 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-1080p.mkv
+2026-06-04 13:45:40 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: DISCONNECT
+2026-06-04 13:45:40 [Thread-3] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-04 13:45:40 [Thread-3] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:45:40 [Thread-3] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 13:45:42 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:46:34 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:46:43 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:46:43 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.69
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.69 Mbps
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-240p.mkv|TCP
+2026-06-04 13:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-240p.mkv via TCP
+2026-06-04 13:46:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-240p.mkv
+2026-06-04 13:47:02 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:47:02 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:47:03 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.78
+2026-06-04 13:47:03 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.78 Mbps
+2026-06-04 13:47:08 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:47:08 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:47:11 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-1080p.mkv|RTP/UDP
+2026-06-04 13:47:11 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-1080p.mkv via RTP/UDP
+2026-06-04 13:47:20 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-1080p.mkv
+2026-06-04 13:47:23 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-1080p.mkv|TCP
+2026-06-04 13:47:23 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-1080p.mkv via TCP
+2026-06-04 13:47:26 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-1080p.mkv
+2026-06-04 13:47:43 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: DISCONNECT
+2026-06-04 13:47:43 [Thread-2] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-04 13:47:43 [Thread-2] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:47:43 [Thread-2] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 1
+2026-06-04 13:47:46 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 13:47:46 [Thread-1] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:47:46 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:48:44 [Thread-3] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:48:46 [Thread-3] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:48:46 [Thread-4] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:48:47 [Thread-4] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.64
+2026-06-04 13:48:47 [Thread-4] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.64 Mbps
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:48:51 [Thread-5] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:48:51 [Thread-5] ERROR c.s.s.StreamingServer - Αδύνατη η εκκίνηση server: Address already in use: bind
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:50:03 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:50:20 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:50:20 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:50:21 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.46
+2026-06-04 13:50:21 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.46 Mbps
+2026-06-04 13:50:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:50:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:50:40 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-480p.mkv|TCP
+2026-06-04 13:50:40 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 13:50:43 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-480p.mkv
+2026-06-04 13:56:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: DISCONNECT
+2026-06-04 13:56:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-04 13:56:04 [Thread-1] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 13:56:04 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 13:56:07 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 13:56:49 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 13:57:04 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 13:57:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 13:57:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.72
+2026-06-04 13:57:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.72 Mbps
+2026-06-04 13:57:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 13:57:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 13:57:15 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-480p.mkv|TCP
+2026-06-04 13:57:15 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 13:57:19 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-480p.mkv
+2026-06-04 14:01:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: DISCONNECT
+2026-06-04 14:01:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-04 14:01:14 [Thread-1] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
+2026-06-04 14:01:14 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-04 14:01:17 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:01:29 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:02:23 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:03:01 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:03:47 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:03:47 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:03:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|7.46
+2026-06-04 14:03:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 7.46 Mbps
+2026-06-04 14:04:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 14:04:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:04:15 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-480p.mkv|TCP
+2026-06-04 14:04:15 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 14:04:28 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-480p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:06:44 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:07:02 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:07:02 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:07:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.55
+2026-06-04 14:07:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.55 Mbps
+2026-06-04 14:07:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 14:07:08 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:07:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-480p.mkv|TCP
+2026-06-04 14:07:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 14:07:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-480p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:09:33 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:09:48 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:09:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:09:49 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: SPEED_INFO|6.48
+2026-06-04 14:09:50 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.48 Mbps
+2026-06-04 14:09:55 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE_LIST|mkv
+2026-06-04 14:09:55 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:09:59 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: GET_FILE|BigBuckBunny-480p.mkv|TCP
+2026-06-04 14:09:59 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 14:10:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Streaming ολοκληρώθηκε: BigBuckBunny-480p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:18:35 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:18:44 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:18:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:18:46 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.76'
+2026-06-04 14:18:46 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.76 Mbps
+2026-06-04 14:18:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:18:48 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:18:52 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-480p.mkv|TCP'
+2026-06-04 14:18:52 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έναρξη streaming: BigBuckBunny-480p.mkv via TCP
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:21:42 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:22:01 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:22:01 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:22:02 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|7.49'
+2026-06-04 14:22:02 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 7.49 Mbps
+2026-06-04 14:22:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:22:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:22:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-480p.mkv|TCP'
+2026-06-04 14:22:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:24:27 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:24:34 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:24:34 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:24:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.75'
+2026-06-04 14:24:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.75 Mbps
+2026-06-04 14:24:38 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:24:38 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:24:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-480p.mkv|TCP'
+2026-06-04 14:24:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:26:21 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:26:30 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:26:30 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:26:32 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.74'
+2026-06-04 14:26:32 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.74 Mbps
+2026-06-04 14:26:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:26:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:26:39 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-480p.mkv|TCP'
+2026-06-04 14:26:39 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:28:55 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:29:04 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:29:04 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:29:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.75'
+2026-06-04 14:29:06 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.75 Mbps
+2026-06-04 14:29:07 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:29:07 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:29:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-480p.mkv|TCP'
+2026-06-04 14:29:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:32:09 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:32:22 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:32:22 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:32:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.77'
+2026-06-04 14:32:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.77 Mbps
+2026-06-04 14:32:25 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:32:25 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:32:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-1080p.mkv|TCP'
+2026-06-04 14:32:35 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:36:54 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:37:09 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:37:09 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:37:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.63'
+2026-06-04 14:37:11 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.63 Mbps
+2026-06-04 14:37:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:37:14 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:37:18 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-1080p.mkv|TCP'
+2026-06-04 14:37:18 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:42:32 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:42:41 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:42:41 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:42:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.18'
+2026-06-04 14:42:42 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.18 Mbps
+2026-06-04 14:42:45 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:42:45 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:42:49 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-720p.mkv|TCP'
+2026-06-04 14:42:49 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει ===
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-04 14:46:15 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-04 14:46:30 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-04 14:46:30 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-04 14:46:31 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.82'
+2026-06-04 14:46:31 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.82 Mbps
+2026-06-04 14:46:41 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE_LIST|mkv'
+2026-06-04 14:46:41 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Εστάλη λίστα: BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-04 14:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'GET_FILE|BigBuckBunny-720p.mkv|TCP'
+2026-06-04 14:46:44 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] FFMPEG ξεκίνησε, περιμένει client στο port 5001
