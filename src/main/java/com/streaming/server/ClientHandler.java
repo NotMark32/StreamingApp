@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.net.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -107,33 +108,88 @@ public class ClientHandler implements Runnable {
         }
 
         try {
-            // Πρώτα ξεκίνα το FFMPEG listener
-            ProcessBuilder pb = new ProcessBuilder(
-                    "ffmpeg",
-                    "-re",
-                    "-i", file.getFilePath(),
-                    "-c:v", "copy",
-                    "-c:a", "aac",
-                    "-f", "mpegts",
-                    "tcp://0.0.0.0:" + Protocol.UDP_PORT + "?listen=1&listen_timeout=15000000"
-            );
+            String clientIP = socket.getInetAddress().getHostAddress();
+
+            String destination = switch (protocol) {
+                case Protocol.UDP -> "udp://" + clientIP + ":" + Protocol.UDP_RECV_PORT;
+                case Protocol.RTP -> {
+                    // Δημιούργησε SDP file
+                    String sdpContent = "v=0\n" +
+                            "o=- 0 0 IN IP4 " + clientIP + "\n" +
+                            "s=Stream\n" +
+                            "c=IN IP4 " + clientIP + "\n" +
+                            "t=0 0\n" +
+                            "m=video " + Protocol.RTP_PORT + " RTP/AVP 96\n" +
+                            "a=rtpmap:96 H264/90000\n" +
+                            "a=fmtp:96 packetization-mode=1\n";
+
+                    java.nio.file.Files.writeString(
+                            java.nio.file.Path.of("stream.sdp"), sdpContent
+                    );
+                    yield "rtp://" + clientIP + ":" + Protocol.RTP_PORT;
+                }
+                default -> "tcp://0.0.0.0:" + Protocol.UDP_PORT + "?listen=1";
+            };
+
+            String format = switch (protocol) {
+                case Protocol.UDP -> "mpegts";
+                case Protocol.RTP -> "rtp";
+                default           -> "mpegts";
+            };
+
+            // Χτίσε εντολή FFMPEG
+            List<String> cmd = new ArrayList<>();
+            cmd.add("ffmpeg");
+            cmd.add("-re");
+            cmd.add("-i"); cmd.add(file.getFilePath());
+
+            if (protocol.equals(Protocol.RTP)) {
+                // RTP: re-encode με keyframes για σωστή αποκωδικοποίηση
+                cmd.add("-c:v"); cmd.add("libx264");
+                cmd.add("-preset"); cmd.add("ultrafast");
+                cmd.add("-tune"); cmd.add("zerolatency");
+                cmd.add("-x264opts"); cmd.add("keyint=30:min-keyint=30");
+            } else {
+                // TCP/UDP: copy για γρήγορη μετάδοση
+                cmd.add("-c:v"); cmd.add("copy");
+            }
+
+            cmd.add("-c:a"); cmd.add("aac");
+            cmd.add("-f"); cmd.add(format);
+            cmd.add(destination);
+
+            ProcessBuilder pb = new ProcessBuilder(cmd);
             pb.redirectErrorStream(true);
             Process process = pb.start();
 
-            logger.info("[{}] FFMPEG ξεκίνησε, περιμένει client στο port {}",
-                    clientAddress, Protocol.UDP_PORT);
+            logger.info("[{}] FFMPEG ξεκίνησε → {} via {}", clientAddress, destination, protocol);
 
-            // Τώρα πες στον Client να συνδεθεί
+            // Στείλε OK στον Client
             out.println(Protocol.RESPONSE_OK + "|" + fileName + "|" + protocol);
             out.flush();
 
+            // Για RTP στείλε και το SDP
+            if (protocol.equals(Protocol.RTP)) {
+                try {
+                    Thread.sleep(100);
+                    String sdp = java.nio.file.Files.readString(
+                            java.nio.file.Path.of("stream.sdp")
+                    );
+                    out.println("SDP|" + sdp.replace("\n", "\\n"));
+                    out.flush();
+                } catch (Exception e) {
+                    logger.error("Σφάλμα αποστολής SDP: {}", e.getMessage());
+                }
+            }
+
             process.getInputStream().transferTo(System.out);
+            process.waitFor();
+            process.destroy();
+            Thread.sleep(2000);
+
             logger.info("[{}] Streaming ολοκληρώθηκε: {}", clientAddress, fileName);
 
-            process.destroy();
-            logger.info("[{}] FFMPEG process τερματίστηκε", clientAddress);
-
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             logger.error("[{}] Σφάλμα streaming: {}", clientAddress, e.getMessage());
             out.println(Protocol.RESPONSE_ERROR + "|" + e.getMessage());
         }

@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.net.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,9 +30,6 @@ public class StreamingClient {
         this.serverPort = serverPort;
     }
 
-    /**
-     * Βήμα 1: Σύνδεση στον server
-     */
     public boolean connect() {
         try {
             logger.info("Σύνδεση στον server {}:{}...", serverHost, serverPort);
@@ -46,22 +44,14 @@ public class StreamingClient {
         }
     }
 
-    /**
-     * Βήμα 2: Speed test και αποστολή αποτελέσματος στον server
-     */
     public double runSpeedTest() {
         SpeedTest speedTest = new SpeedTest();
         speedMbps = speedTest.measureSpeed();
         logger.info("Ταχύτητα: {} Mbps", speedMbps);
-
-        // Στείλε την ταχύτητα στον server
         out.println(Protocol.SPEED_INFO + "|" + speedMbps);
         return speedMbps;
     }
 
-    /**
-     * Βήμα 3: Ζήτησε λίστα αρχείων για συγκεκριμένο format
-     */
     public List<String> requestFileList(String format) {
         this.selectedFormat = format;
         out.println(Protocol.REQUEST_FILE_LIST + "|" + format);
@@ -70,7 +60,6 @@ public class StreamingClient {
             String response = in.readLine();
             logger.info("Server απάντηση: {}", response);
 
-            // Αναμένουμε: FILE_LIST|αρχείο1,αρχείο2,...
             if (response != null && response.startsWith("FILE_LIST|")) {
                 String filesPart = response.substring("FILE_LIST|".length());
                 if (filesPart.isEmpty()) {
@@ -88,10 +77,6 @@ public class StreamingClient {
         return List.of();
     }
 
-    /**
-     * Βήμα 4: Ζήτησε streaming συγκεκριμένου αρχείου
-     * Αν protocol == null, επιλέγεται αυτόματα βάσει ανάλυσης
-     */
     public boolean requestFile(String fileName, String protocol) {
         if (protocol == null || protocol.isEmpty()) {
             String resolution = extractResolution(fileName);
@@ -99,55 +84,107 @@ public class StreamingClient {
             logger.info("Auto-selected πρωτόκολλο: {} για {}", protocol, resolution);
         }
 
-        out.println(Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
-        logger.info("Έστειλα στον Server: {}", Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
-        out.flush(); // σιγουρέψου ότι στάλθηκε
-        try {
-            String response = in.readLine();
-            logger.info("Server απάντηση: {}", response);
+        final String finalProtocol = protocol;
 
-            if (response != null && response.startsWith(Protocol.RESPONSE_OK)) {
-                logger.info("Έναρξη λήψης: {}", fileName);
+        // Για UDP/RTP: ξεκίνα το ffplay ΠΡΩΤΑ, μετά ζήτα το αρχείο
+        if (protocol.equals(Protocol.UDP) || protocol.equals(Protocol.RTP)) {
 
-                // Περίμενε 1 δευτερόλεπτο για να ξεκινήσει ο Server
-                Thread.sleep(4000);
+            // Για RTP: ΜΗΝ ξεκινάς ffplay ακόμα
+            if (protocol.equals(Protocol.UDP)) {
+                new Thread(() -> startReceiving(finalProtocol)).start();
+                try { Thread.sleep(1000); }
+                catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+            }
 
-                startReceiving(protocol);
-                return true;
-            } else {
-                logger.error("Server error: {}", response);
+            out.println(Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
+            logger.info("Έστειλα στον Server: {}", Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
+
+            try {
+                String response = in.readLine();
+                logger.info("Server απάντηση: {}", response);
+
+                if (response != null && response.startsWith(Protocol.RESPONSE_OK)) {
+
+                    // Για RTP: διάβασε SDP και μετά ξεκίνα ffplay
+                    if (finalProtocol.equals(Protocol.RTP)) {
+                        String sdpLine = in.readLine();
+                        if (sdpLine != null && sdpLine.startsWith("SDP|")) {
+                            String sdpContent = sdpLine.substring(4).replace("\\n", "\n");
+                            java.nio.file.Files.writeString(
+                                    java.nio.file.Path.of("stream.sdp"), sdpContent
+                            );
+                            logger.info("SDP αποθηκεύτηκε, ξεκινά ffplay...");
+                        }
+                        // Τώρα ξεκίνα ffplay
+                        new Thread(() -> startReceiving(finalProtocol)).start();
+                    }
+                    return true;
+                } else {
+                    logger.error("Server error: {}", response);
+                    return false;
+                }
+            } catch (IOException e) {
+                logger.error("Σφάλμα: {}", e.getMessage());
                 return false;
             }
-        } catch (IOException | InterruptedException e) {
-            logger.error("Σφάλμα αίτησης αρχείου: {}", e.getMessage());
-            return false;
+
+            // Για TCP: ο Server ξεκινάει πρώτα
+        } else {
+            out.println(Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
+            logger.info("Έστειλα στον Server: {}", Protocol.REQUEST_FILE + "|" + fileName + "|" + protocol);
+
+            try {
+                String response = in.readLine();
+                logger.info("Server απάντηση: {}", response);
+
+                if (response != null && response.startsWith(Protocol.RESPONSE_OK)) {
+                    logger.info("Έναρξη λήψης: {}", fileName);
+                    Thread.sleep(4000);
+                    startReceiving(protocol);
+                    return true;
+                } else {
+                    logger.error("Server error: {}", response);
+                    return false;
+                }
+            } catch (IOException | InterruptedException e) {
+                logger.error("Σφάλμα: {}", e.getMessage());
+                return false;
+            }
         }
     }
 
-    /**
-     * Ξεκινά FFMPEG για λήψη του stream
-     */
     private void startReceiving(String protocol) {
-        String source = "tcp://127.0.0.1:" + Protocol.UDP_PORT;
-        logger.info("Έναρξη αναπαραγωγής από: {}", source);
+        String source = switch (protocol) {
+            case Protocol.UDP -> "udp://0.0.0.0:" + Protocol.UDP_RECV_PORT;
+            case Protocol.RTP -> "stream.sdp";
+            default           -> "tcp://127.0.0.1:" + Protocol.UDP_PORT;
+        };
+
+        logger.info("Έναρξη αναπαραγωγής από: {} via {}", source, protocol);
 
         try {
-            ProcessBuilder pb = new ProcessBuilder(
-                    "ffplay",
-                    "-i", source,
-                    "-autoexit",
-                    "-window_title", "Streaming Video",
-                    "-infbuf",
-                    "-fflags", "nobuffer"
-            );
+            List<String> command = new ArrayList<>();
+            command.add("ffplay");
 
+            if (protocol.equals(Protocol.RTP)) {
+                command.add("-protocol_whitelist");
+                command.add("file,rtp,udp");
+            }
+
+            command.add("-i");
+            command.add(source);
+            command.add("-autoexit");
+            command.add("-window_title");
+            command.add("Streaming - " + protocol);
+            command.add("-infbuf");
+            command.add("-fflags");
+            command.add("nobuffer");
+
+            ProcessBuilder pb = new ProcessBuilder(command);
             pb.inheritIO();
             Process process = pb.start();
             process.waitFor();
             process.destroy();
-            logger.info("ffplay process τερματίστηκε");
-// Περίμενε λίγο πριν επιτραπεί νέο streaming
-            Thread.sleep(1000);
             logger.info("Αναπαραγωγή ολοκληρώθηκε!");
 
         } catch (IOException | InterruptedException e) {
@@ -155,9 +192,6 @@ public class StreamingClient {
         }
     }
 
-    /**
-     * Αποσύνδεση από τον server
-     */
     public void disconnect() {
         try {
             if (out != null) out.println(Protocol.DISCONNECT);
@@ -168,9 +202,6 @@ public class StreamingClient {
         }
     }
 
-    // ── Βοηθητικές μέθοδοι ──────────────────────────────────────────
-
-    /** "Forrest_Gump-480p.mkv" → "480p" */
     private String extractResolution(String fileName) {
         int dash = fileName.lastIndexOf('-');
         int dot  = fileName.lastIndexOf('.');
@@ -178,31 +209,18 @@ public class StreamingClient {
         return fileName.substring(dash + 1, dot);
     }
 
-    private String buildSource(String protocol) {
-        return switch (protocol) {
-            case Protocol.UDP -> "udp://0.0.0.0:" + Protocol.UDP_PORT;
-            case Protocol.RTP -> "rtp://0.0.0.0:" + Protocol.RTP_PORT;
-            default -> "tcp://127.0.0.1:" + Protocol.UDP_PORT + "?listen=1";
-        };
-    }
-
-    // Getters για GUI
-    public double getSpeedMbps()         { return speedMbps; }
+    public double getSpeedMbps()            { return speedMbps; }
     public List<String> getAvailableFiles() { return availableFiles; }
-    public String getSelectedFormat()    { return selectedFormat; }
+    public String getSelectedFormat()       { return selectedFormat; }
 
-    // ── Main για να τρέξεις μόνο τον Client ─────────────────────────
     public static void main(String[] args) {
         StreamingClient client = new StreamingClient("localhost", Protocol.SERVER_PORT);
-
         if (client.connect()) {
             client.runSpeedTest();
             List<String> files = client.requestFileList("mkv");
-
             if (!files.isEmpty()) {
-                client.requestFile(files.get(0), null); // auto-select protocol
+                client.requestFile(files.get(0), null);
             }
-
             client.disconnect();
         }
     }

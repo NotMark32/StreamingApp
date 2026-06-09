@@ -16,22 +16,23 @@ public class Protocol {
     public static final String SPEED_INFO        = "SPEED_INFO";
 
     // Ports
-    public static final int SERVER_PORT = 5000;
-    public static final int UDP_PORT    = 5001;
-    public static final int RTP_PORT    = 5002;
+    public static final int SERVER_PORT   = 5000;
+    public static final int UDP_PORT      = 5001;
+    public static final int UDP_RECV_PORT = 5003;
+    public static final int RTP_PORT      = 5002;
 
     /**
      * Επιλέγει αυτόματα πρωτόκολλο βάσει ανάλυσης
-     * 240p, 360p        -> TCP
-     * 480p              -> UDP
-     * 720p, 1080p       -> RTP/UDP
+     * 240p, 360p   -> TCP
+     * 480p         -> UDP
+     * 720p, 1080p  -> RTP/UDP
      */
     public static String autoSelectProtocol(String resolution) {
         return switch (resolution) {
-            case "240p", "360p" -> TCP;
-            case "480p"         -> UDP;
-            case "720p", "1080p"-> RTP;
-            default             -> TCP;
+            case "240p", "360p"  -> TCP;
+            case "480p"          -> UDP;
+            case "720p", "1080p" -> RTP;
+            default              -> TCP;
         };
     }
 }
