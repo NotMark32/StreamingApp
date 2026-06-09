@@ -3,6 +3,7 @@ package com.streaming.client;
 import com.streaming.common.Protocol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.streaming.server.LoadBalancer;
 
 import java.io.*;
 import java.net.*;
@@ -214,7 +215,7 @@ public class StreamingClient {
     public String getSelectedFormat()       { return selectedFormat; }
 
     public static void main(String[] args) {
-        StreamingClient client = new StreamingClient("localhost", Protocol.SERVER_PORT);
+        StreamingClient client = new StreamingClient("localhost", LoadBalancer.LB_PORT);
         if (client.connect()) {
             client.runSpeedTest();
             List<String> files = client.requestFileList("mkv");

@@ -430,3 +430,9 @@
 2026-06-09 11:43:41 [SwingWorker-pool-1-thread-8] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: tcp://127.0.0.1:5001 via TCP
 2026-06-09 11:43:51 [SwingWorker-pool-1-thread-8] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
 2026-06-09 11:43:53 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
+2026-06-09 11:48:53 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Σύνδεση στον server localhost:5000...
+2026-06-09 11:48:53 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Συνδέθηκε επιτυχώς!
+2026-06-09 11:48:53 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Ξεκινά speed test (5 δευτερόλεπτα)...
+2026-06-09 11:48:54 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Speed test αποτέλεσμα: {:.2f} Mbps (6.802721088435375 bytes σε 1048576 ms)
+2026-06-09 11:48:54 [SwingWorker-pool-1-thread-2] INFO  c.s.c.StreamingClient - Ταχύτητα: 6.8 Mbps
+2026-06-09 11:49:28 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
