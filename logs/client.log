@@ -443,3 +443,36 @@
 2026-06-09 11:54:23 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Speed test αποτέλεσμα: {:.2f} Mbps (6.514657980456026 bytes σε 1048576 ms)
 2026-06-09 11:54:23 [SwingWorker-pool-1-thread-2] INFO  c.s.c.StreamingClient - Ταχύτητα: 6.51 Mbps
 2026-06-09 11:54:54 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
+2026-06-09 12:01:05 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Σύνδεση στον server localhost:5000...
+2026-06-09 12:01:05 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - SSL/TLS σύνδεση εγκαταστάθηκε!
+2026-06-09 12:01:05 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Συνδέθηκε επιτυχώς!
+2026-06-09 12:01:05 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Ξεκινά speed test (5 δευτερόλεπτα)...
+2026-06-09 12:01:06 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Speed test αποτέλεσμα: {:.2f} Mbps (6.808510638297872 bytes σε 1048576 ms)
+2026-06-09 12:01:06 [SwingWorker-pool-1-thread-2] INFO  c.s.c.StreamingClient - Ταχύτητα: 6.81 Mbps
+2026-06-09 12:01:44 [SwingWorker-pool-1-thread-3] INFO  c.s.c.StreamingClient - Server απάντηση: FILE_LIST|BigBuckBunny-240p.mkv,BigBuckBunny-360p.mkv,BigBuckBunny-480p.mkv,BigBuckBunny-720p.mkv,BigBuckBunny-1080p.mkv
+2026-06-09 12:01:44 [SwingWorker-pool-1-thread-3] INFO  c.s.c.StreamingClient - Διαθέσιμα αρχεία: [BigBuckBunny-240p.mkv, BigBuckBunny-360p.mkv, BigBuckBunny-480p.mkv, BigBuckBunny-720p.mkv, BigBuckBunny-1080p.mkv]
+2026-06-09 12:02:14 [SwingWorker-pool-1-thread-4] INFO  c.s.c.StreamingClient - Έστειλα στον Server: GET_FILE|BigBuckBunny-1080p.mkv|TCP
+2026-06-09 12:02:14 [SwingWorker-pool-1-thread-4] INFO  c.s.c.StreamingClient - Server απάντηση: OK|BigBuckBunny-1080p.mkv|TCP
+2026-06-09 12:02:14 [SwingWorker-pool-1-thread-4] INFO  c.s.c.StreamingClient - Έναρξη λήψης: BigBuckBunny-1080p.mkv
+2026-06-09 12:02:18 [SwingWorker-pool-1-thread-4] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: tcp://127.0.0.1:5001 via TCP
+2026-06-09 12:02:28 [SwingWorker-pool-1-thread-4] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
+2026-06-09 12:02:56 [SwingWorker-pool-1-thread-5] INFO  c.s.c.StreamingClient - Έστειλα στον Server: GET_FILE|BigBuckBunny-720p.mkv|TCP
+2026-06-09 12:02:56 [SwingWorker-pool-1-thread-5] INFO  c.s.c.StreamingClient - Server απάντηση: OK|BigBuckBunny-720p.mkv|TCP
+2026-06-09 12:02:56 [SwingWorker-pool-1-thread-5] INFO  c.s.c.StreamingClient - Έναρξη λήψης: BigBuckBunny-720p.mkv
+2026-06-09 12:03:00 [SwingWorker-pool-1-thread-5] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: tcp://127.0.0.1:5001 via TCP
+2026-06-09 12:03:10 [SwingWorker-pool-1-thread-5] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
+2026-06-09 12:03:18 [SwingWorker-pool-1-thread-6] INFO  c.s.c.StreamingClient - Έστειλα στον Server: GET_FILE|BigBuckBunny-720p.mkv|TCP
+2026-06-09 12:03:18 [SwingWorker-pool-1-thread-6] INFO  c.s.c.StreamingClient - Server απάντηση: OK|BigBuckBunny-720p.mkv|TCP
+2026-06-09 12:03:18 [SwingWorker-pool-1-thread-6] INFO  c.s.c.StreamingClient - Έναρξη λήψης: BigBuckBunny-720p.mkv
+2026-06-09 12:03:22 [SwingWorker-pool-1-thread-6] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: tcp://127.0.0.1:5001 via TCP
+2026-06-09 12:03:32 [SwingWorker-pool-1-thread-6] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
+2026-06-09 12:03:50 [Thread-0] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: udp://0.0.0.0:5003 via UDP
+2026-06-09 12:03:51 [SwingWorker-pool-1-thread-7] INFO  c.s.c.StreamingClient - Έστειλα στον Server: GET_FILE|BigBuckBunny-360p.mkv|UDP
+2026-06-09 12:03:51 [SwingWorker-pool-1-thread-7] INFO  c.s.c.StreamingClient - Server απάντηση: OK|BigBuckBunny-360p.mkv|UDP
+2026-06-09 12:04:18 [Thread-0] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
+2026-06-09 12:04:26 [SwingWorker-pool-1-thread-8] INFO  c.s.c.StreamingClient - Έστειλα στον Server: GET_FILE|BigBuckBunny-240p.mkv|RTP/UDP
+2026-06-09 12:04:26 [SwingWorker-pool-1-thread-8] INFO  c.s.c.StreamingClient - Server απάντηση: OK|BigBuckBunny-240p.mkv|RTP/UDP
+2026-06-09 12:04:27 [SwingWorker-pool-1-thread-8] INFO  c.s.c.StreamingClient - SDP αποθηκεύτηκε, ξεκινά ffplay...
+2026-06-09 12:04:27 [Thread-1] INFO  c.s.c.StreamingClient - Έναρξη αναπαραγωγής από: stream.sdp via RTP/UDP
+2026-06-09 12:04:43 [Thread-1] INFO  c.s.c.StreamingClient - Αναπαραγωγή ολοκληρώθηκε!
+2026-06-09 12:10:08 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
