@@ -4,6 +4,7 @@ import com.streaming.common.Protocol;
 import com.streaming.common.VideoFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.streaming.common.SSLConfig;
 
 import java.io.*;
 import java.net.*;
@@ -35,28 +36,33 @@ public class StreamingServer {
      * 3. Περιμένει clients σε loop
      */
     public void start() {
-        logger.info("=== Streaming Server ξεκινάει ===");
+        logger.info("=== Streaming Server ξεκινάει (SSL/TLS) ===");
 
-        // Βήμα 1: Επεξεργασία αρχείων με FFMPEG
         logger.info("Επεξεργασία αρχείων βίντεο...");
         VideoConverter converter = new VideoConverter(videosFolder);
         availableFiles = converter.processVideosFolder();
         logger.info("Έτοιμα {} αρχεία για streaming", availableFiles.size());
 
-        // Βήμα 2: Άνοιγμα ServerSocket
         try {
-            serverSocket = new ServerSocket(port);
+            // Προσπάθησε με SSL πρώτα
+            try {
+                serverSocket = SSLConfig.createSSLServerSocket(port);
+                logger.info("SSL/TLS ενεργοποιήθηκε στο port {}", port);
+            } catch (Exception sslEx) {
+                // Fallback σε plain socket αν δεν υπάρχει keystore
+                logger.warn("SSL μη διαθέσιμο ({}), χρήση plain socket", sslEx.getMessage());
+                serverSocket = new ServerSocket(port);
+            }
+
             running = true;
             logger.info("Server ακούει στο port {}", port);
 
-            // Βήμα 3: Loop αποδοχής clients
             while (running) {
                 try {
                     Socket clientSocket = serverSocket.accept();
                     logger.info("Νέος Client συνδέθηκε: {}",
                             clientSocket.getInetAddress().getHostAddress());
 
-                    // Ξεκίνα νέο thread για τον client
                     ClientHandler handler = new ClientHandler(
                             clientSocket, availableFiles, this
                     );

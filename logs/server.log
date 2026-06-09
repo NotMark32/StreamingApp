@@ -489,3 +489,33 @@
 2026-06-09 11:49:26 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.
 2026-06-09 11:49:26 [Thread-3] WARN  c.s.s.ClientHandler - [127.0.0.1] Αποσύνδεση: Socket closed
 2026-06-09 11:49:26 [Thread-3] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.StreamingServer - === Streaming Server ξεκινάει (SSL/TLS) ===
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.StreamingServer - Επεξεργασία αρχείων βίντεο...
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Βρέθηκαν 1 ταινίες: [BigBuckBunny]
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mp4
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.avi
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-240p.mkv
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mp4
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.avi
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-360p.mkv
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mp4
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.avi
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-480p.mkv
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mp4
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.avi
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-720p.mkv
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mp4
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.avi
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Υπάρχει ήδη: BigBuckBunny-1080p.mkv
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.VideoConverter - Σύνολο διαθέσιμων αρχείων: 15
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.StreamingServer - Έτοιμα 15 αρχεία για streaming
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.StreamingServer - SSL/TLS ενεργοποιήθηκε στο port 5000
+2026-06-09 11:53:50 [Thread-0] INFO  c.s.s.StreamingServer - Server ακούει στο port 5000
+2026-06-09 11:54:22 [Thread-0] INFO  c.s.s.StreamingServer - Νέος Client συνδέθηκε: 127.0.0.1
+2026-06-09 11:54:22 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Σύνδεση εγκαθίσταται...
+2026-06-09 11:54:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'SPEED_INFO|6.51'
+2026-06-09 11:54:23 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ταχύτητα client: 6.51 Mbps
+2026-06-09 11:54:54 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Έλαβα: 'DISCONNECT'
+2026-06-09 11:54:54 [Thread-1] INFO  c.s.s.ClientHandler - [127.0.0.1] Ο client ζήτησε αποσύνδεση
+2026-06-09 11:54:54 [Thread-1] INFO  c.s.s.StreamingServer - Client αφαιρέθηκε. Ενεργοί clients: 0
+2026-06-09 11:54:58 [AWT-EventQueue-0] INFO  c.s.s.StreamingServer - Server σταμάτησε.

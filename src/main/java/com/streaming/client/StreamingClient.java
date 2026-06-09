@@ -4,7 +4,7 @@ import com.streaming.common.Protocol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.streaming.server.LoadBalancer;
-
+import com.streaming.common.SSLConfig;
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
@@ -34,7 +34,17 @@ public class StreamingClient {
     public boolean connect() {
         try {
             logger.info("Σύνδεση στον server {}:{}...", serverHost, serverPort);
-            socket = new Socket(serverHost, serverPort);
+
+            // Προσπάθησε με SSL πρώτα
+            try {
+                socket = SSLConfig.createSSLSocket(serverHost, serverPort);
+                logger.info("SSL/TLS σύνδεση εγκαταστάθηκε!");
+            } catch (Exception sslEx) {
+                // Fallback σε plain socket
+                logger.warn("SSL αποτυχία ({}), χρήση plain socket", sslEx.getMessage());
+                socket = new Socket(serverHost, serverPort);
+            }
+
             in  = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()), true);
             logger.info("Συνδέθηκε επιτυχώς!");

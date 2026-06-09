@@ -436,3 +436,10 @@
 2026-06-09 11:48:54 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Speed test αποτέλεσμα: {:.2f} Mbps (6.802721088435375 bytes σε 1048576 ms)
 2026-06-09 11:48:54 [SwingWorker-pool-1-thread-2] INFO  c.s.c.StreamingClient - Ταχύτητα: 6.8 Mbps
 2026-06-09 11:49:28 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
+2026-06-09 11:54:22 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Σύνδεση στον server localhost:5000...
+2026-06-09 11:54:22 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - SSL/TLS σύνδεση εγκαταστάθηκε!
+2026-06-09 11:54:22 [SwingWorker-pool-1-thread-1] INFO  c.s.c.StreamingClient - Συνδέθηκε επιτυχώς!
+2026-06-09 11:54:22 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Ξεκινά speed test (5 δευτερόλεπτα)...
+2026-06-09 11:54:23 [SwingWorker-pool-1-thread-2] INFO  c.s.client.SpeedTest - Speed test αποτέλεσμα: {:.2f} Mbps (6.514657980456026 bytes σε 1048576 ms)
+2026-06-09 11:54:23 [SwingWorker-pool-1-thread-2] INFO  c.s.c.StreamingClient - Ταχύτητα: 6.51 Mbps
+2026-06-09 11:54:54 [AWT-EventQueue-0] INFO  c.s.c.StreamingClient - Αποσυνδέθηκε από τον server.
