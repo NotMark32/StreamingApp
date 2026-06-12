@@ -21,12 +21,6 @@ public class Protocol {
     public static final int UDP_RECV_PORT = 5003;
     public static final int RTP_PORT      = 5002;
 
-    /**
-     * Επιλέγει αυτόματα πρωτόκολλο βάσει ανάλυσης
-     * 240p, 360p   -> TCP
-     * 480p         -> UDP
-     * 720p, 1080p  -> RTP/UDP
-     */
     public static String autoSelectProtocol(String resolution) {
         return switch (resolution) {
             case "240p", "360p"  -> TCP;

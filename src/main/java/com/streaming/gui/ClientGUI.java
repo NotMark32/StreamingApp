@@ -64,7 +64,7 @@ public class ClientGUI extends JFrame {
     private void layoutComponents() {
         setLayout(new BorderLayout(10, 10));
 
-        // ── Top: σύνδεση ─────────────────────────────────────────────
+        // Top: σύνδεση
         JPanel connectPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 5));
         connectPanel.setBorder(BorderFactory.createTitledBorder("Σύνδεση"));
         connectPanel.add(new JLabel("Server:"));
@@ -77,7 +77,7 @@ public class ClientGUI extends JFrame {
         connectPanel.add(speedLabel);
         add(connectPanel, BorderLayout.NORTH);
 
-        // ── Center: επιλογή αρχείου ──────────────────────────────────
+        // Center: επιλογή αρχείου
         JPanel centerPanel = new JPanel(new BorderLayout(5, 5));
 
         // Επάνω μέρος: format + λήψη λίστας
@@ -101,7 +101,7 @@ public class ClientGUI extends JFrame {
 
         add(centerPanel, BorderLayout.CENTER);
 
-        // ── Bottom: logs ─────────────────────────────────────────────
+        // Bottom: logs
         JScrollPane logScroll = new JScrollPane(logArea);
         logScroll.setBorder(BorderFactory.createTitledBorder("Logs"));
         logScroll.setPreferredSize(new Dimension(700, 150));

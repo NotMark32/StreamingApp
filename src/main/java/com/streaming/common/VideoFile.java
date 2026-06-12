@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class VideoFile implements Serializable {
 
-    private final String name;        // π.χ. "Forrest_Gump"
-    private final String format;      // π.χ. "mkv"
-    private final String resolution;  // π.χ. "480p"
+    private final String name;
+    private final String format;
+    private final String resolution;
     private final String filePath;    // full path στο δίσκο
 
     public VideoFile(String name, String format, String resolution, String filePath) {
@@ -22,10 +22,6 @@ public class VideoFile implements Serializable {
     public String getResolution() { return resolution; }
     public String getFilePath()   { return filePath; }
 
-    /**
-     * Επιστρέφει το όνομα αρχείου όπως θα φαίνεται στον Client
-     * π.χ. "Forrest_Gump-480p.mkv"
-     */
     public String getFileName() {
         return name + "-" + resolution + "." + format;
     }

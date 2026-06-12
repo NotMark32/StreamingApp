@@ -10,9 +10,7 @@ public class SSLConfig {
     private static final String KEYSTORE_PASS = "streaming123";
     private static final String KEYSTORE_TYPE = "PKCS12";
 
-    /**
-     * Δημιουργεί SSLContext για τον Server
-     */
+    //Δημιουργεί SSLContext για τον Server
     public static SSLContext createServerSSLContext() throws Exception {
         KeyStore keyStore = KeyStore.getInstance(KEYSTORE_TYPE);
         try (FileInputStream fis = new FileInputStream(KEYSTORE_PATH)) {
@@ -29,9 +27,7 @@ public class SSLConfig {
         return sslContext;
     }
 
-    /**
-     * Δημιουργεί SSLContext για τον Client (trust all για development)
-     */
+
     public static SSLContext createClientSSLContext() throws Exception {
         // Trust manager που αποδέχεται όλα τα certificates (για development)
         TrustManager[] trustAll = new TrustManager[]{
@@ -51,18 +47,15 @@ public class SSLConfig {
         return sslContext;
     }
 
-    /**
-     * Δημιουργεί SSLServerSocket
-     */
+
+    //Δημιουργεί SSLServerSocket
     public static SSLServerSocket createSSLServerSocket(int port) throws Exception {
         SSLContext ctx = createServerSSLContext();
         SSLServerSocketFactory factory = ctx.getServerSocketFactory();
         return (SSLServerSocket) factory.createServerSocket(port);
     }
 
-    /**
-     * Δημιουργεί SSLSocket για σύνδεση σε server
-     */
+    //Δημιουργεί SSLSocket για σύνδεση σε server
     public static SSLSocket createSSLSocket(String host, int port) throws Exception {
         SSLContext ctx = createClientSSLContext();
         SSLSocketFactory factory = ctx.getSocketFactory();

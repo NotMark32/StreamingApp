@@ -20,17 +20,14 @@ public class LoadBalancer {
     private ServerSocket lbSocket;
     private boolean running = false;
 
-    /**
-     * Προσθήκη Server node στον Load Balancer
-     */
+
+    //Προσθήκη Server node στον Load Balancer
     public void addServer(String host, int port) {
         servers.add(new ServerNode(host, port));
         logger.info("Server προστέθηκε: {}:{}", host, port);
     }
 
-    /**
-     * Εκκίνηση Load Balancer
-     */
+    //Εκκίνηση Load Balancer
     public void start() {
         if (servers.isEmpty()) {
             logger.error("Δεν υπάρχουν servers!");
@@ -74,9 +71,7 @@ public class LoadBalancer {
         }
     }
 
-    /**
-     * Round Robin επιλογή server
-     */
+    //Round Robin επιλογή server
     private ServerNode selectServer() {
         int idx = roundRobinIndex.getAndIncrement() % servers.size();
         return servers.get(idx);
@@ -85,7 +80,7 @@ public class LoadBalancer {
     public List<ServerNode> getServers() { return servers; }
     public boolean isRunning()           { return running; }
 
-    // ── ServerNode ───────────────────────────────────────────────────
+    // ServerNode
     public static class ServerNode {
         public final String host;
         public final int port;
@@ -100,7 +95,7 @@ public class LoadBalancer {
         public String toString() { return host + ":" + port; }
     }
 
-    // ── ProxyHandler: κάνει proxy την επικοινωνία Client ↔ Server ───
+    // ProxyHandler: κάνει proxy την επικοινωνία Client με Server
     private static class ProxyHandler implements Runnable {
 
         private final Socket clientSocket;

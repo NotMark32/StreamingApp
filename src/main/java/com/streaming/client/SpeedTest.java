@@ -10,16 +10,11 @@ public class SpeedTest {
 
     private static final Logger logger = LoggerFactory.getLogger(SpeedTest.class);
 
-    // Χρησιμοποιούμε ένα μικρό public test file για το speed test
     private static final String TEST_URL =
             "http://speedtest.tele2.net/1MB.zip";
 
     private static final int TEST_DURATION_MS = 5000; // 5 δευτερόλεπτα
 
-    /**
-     * Μετράει την ταχύτητα σύνδεσης του client σε Mbps.
-     * Κατεβάζει δεδομένα για 5 δευτερόλεπτα και υπολογίζει.
-     */
     public double measureSpeed() {
         logger.info("Ξεκινά speed test ({} δευτερόλεπτα)...", TEST_DURATION_MS / 1000);
 

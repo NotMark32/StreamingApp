@@ -57,7 +57,7 @@ public class ServerGUI extends JFrame {
     private void layoutComponents() {
         setLayout(new BorderLayout(10, 10));
 
-        // ── Top panel: controls ──────────────────────────────────────
+        // Top panel: controls
         JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 5));
         topPanel.setBorder(BorderFactory.createTitledBorder("Έλεγχος Server"));
         topPanel.add(startBtn);
@@ -68,12 +68,12 @@ public class ServerGUI extends JFrame {
         topPanel.add(clientCountLabel);
         add(topPanel, BorderLayout.NORTH);
 
-        // ── Center: αρχεία ───────────────────────────────────────────
+        // Center: αρχεία
         JScrollPane tableScroll = new JScrollPane(fileTable);
         tableScroll.setBorder(BorderFactory.createTitledBorder("Διαθέσιμα Αρχεία"));
         tableScroll.setPreferredSize(new Dimension(800, 250));
 
-        // ── Bottom: logs ─────────────────────────────────────────────
+        // Bottom: logs
         JScrollPane logScroll = new JScrollPane(logArea);
         logScroll.setBorder(BorderFactory.createTitledBorder("Logs"));
         logScroll.setPreferredSize(new Dimension(800, 200));
@@ -154,7 +154,7 @@ public class ServerGUI extends JFrame {
         });
     }
 
-    /** Ανανεώνει τον αριθμό ενεργών clients κάθε 2 δευτερόλεπτα */
+    //Ανανεώνει τον αριθμό ενεργών clients κάθε 2 δευτερόλεπτα
     private void startClientCountUpdater() {
         Timer timer = new Timer(2000, e -> {
             if (server != null && server.isRunning()) {

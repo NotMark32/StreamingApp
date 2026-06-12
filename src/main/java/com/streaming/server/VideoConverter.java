@@ -17,7 +17,7 @@ public class VideoConverter {
     private static final String[] FORMATS     = {"mp4", "avi", "mkv"};
     private static final String[] RESOLUTIONS = {"240p", "360p", "480p", "720p", "1080p"};
 
-    // Αντιστοίχιση ανάλυσης → πλάτος x ύψος
+    // Αντιστοίχιση ανάλυσης
     private static final int[][] SIZES = {
             {426,  240},   // 240p
             {640,  360},   // 360p
@@ -32,11 +32,7 @@ public class VideoConverter {
         this.videosFolder = videosFolder;
     }
 
-    /**
-     * Σκανάρει τον φάκελο, βρίσκει όλες τις ταινίες (αρχικά αρχεία),
-     * και δημιουργεί τις εκδόσεις που λείπουν.
-     * Επιστρέφει λίστα με ΟΛΑ τα διαθέσιμα VideoFile αντικείμενα.
-     */
+    // Σκανάρει τον φάκελο βρίσκει όλες τις ταινίες και δημιουργεί τις εκδόσεις που λείπουν -> Επιστρέφει λίστα με όλα τα διαθέσιμα VideoFile αντικείμενα
     public List<VideoFile> processVideosFolder() {
         List<VideoFile> allFiles = new ArrayList<>();
         File folder = new File(videosFolder);
@@ -47,11 +43,11 @@ public class VideoConverter {
             return allFiles;
         }
 
-        // Βρες τα αρχικά αρχεία (π.χ. Forrest_Gump-720p.mkv)
+        // Βρες τα αρχικά αρχεία
         List<String> movieNames = findOriginalMovieNames(folder);
         logger.info("Βρέθηκαν {} ταινίες: {}", movieNames.size(), movieNames);
 
-        // Για κάθε ταινία, δημιούργησε όλα τα formats/αναλύσεις που λείπουν
+        // Για κάθε ταινία δημιούργησε όλα τις αναλύσεις που λείπουν
         for (String movieName : movieNames) {
             String originalFile = findOriginalFile(folder, movieName);
             if (originalFile == null) continue;
@@ -93,10 +89,7 @@ public class VideoConverter {
         return allFiles;
     }
 
-    /**
-     * Βρίσκει τα μοναδικά ονόματα ταινιών στον φάκελο.
-     * π.χ. από "Forrest_Gump-720p.mkv" → "Forrest_Gump"
-     */
+    //Βρίσκει τα μοναδικά ονόματα ταινιών στον φάκελο
     private List<String> findOriginalMovieNames(File folder) {
         List<String> names = new ArrayList<>();
         File[] files = folder.listFiles();
@@ -116,9 +109,7 @@ public class VideoConverter {
         return names;
     }
 
-    /**
-     * Βρίσκει το αρχικό αρχείο μιας ταινίας (αυτό με τη μεγαλύτερη ανάλυση)
-     */
+    //Βρίσκει το αρχικό αρχείο μιας ταινίας (αυτό με τη μεγαλύτερη ανάλυση)
     private String findOriginalFile(File folder, String movieName) {
         String bestFile = null;
         int bestResIndex = -1;
@@ -143,9 +134,7 @@ public class VideoConverter {
         return bestFile;
     }
 
-    /**
-     * Καλεί το FFMPEG για να μετατρέψει το αρχείο
-     */
+     //Καλεί το FFMPEG για να μετατρέψει το αρχείο
     private boolean convertVideo(String inputPath, String outputPath, int width, int height) {
         try {
             // Χτίζουμε την εντολή FFMPEG:
@@ -166,10 +155,10 @@ public class VideoConverter {
 
             int exitCode = process.waitFor();
             if (exitCode == 0) {
-                logger.info("✅ Επιτυχής μετατροπή: {}", outputPath);
+                logger.info("Επιτυχής μετατροπή: {}", outputPath);
                 return true;
             } else {
-                logger.error("❌ Αποτυχία μετατροπής: {} (exit code {})", outputPath, exitCode);
+                logger.error("Αποτυχία μετατροπής: {} (exit code {})", outputPath, exitCode);
                 return false;
             }
         } catch (IOException | InterruptedException e) {
@@ -178,20 +167,18 @@ public class VideoConverter {
         }
     }
 
-    // ── Βοηθητικές μέθοδοι ──────────────────────────────────────────
+    // Βοηθητικές μέθοδοι
 
     private boolean isVideoFile(String name) {
         return name.endsWith(".mp4") || name.endsWith(".avi") || name.endsWith(".mkv");
     }
 
-    /** "Forrest_Gump-720p.mkv" → "Forrest_Gump" */
     private String extractMovieName(String filename) {
         int dash = filename.lastIndexOf('-');
         if (dash == -1) return null;
         return filename.substring(0, dash);
     }
 
-    /** "Forrest_Gump-720p.mkv" → "720p" */
     private String extractResolution(String filename) {
         int dash = filename.lastIndexOf('-');
         int dot  = filename.lastIndexOf('.');
@@ -199,7 +186,6 @@ public class VideoConverter {
         return filename.substring(dash + 1, dot);
     }
 
-    /** "Forrest_Gump-720p.mkv" → detect resolution από FFMPEG */
     private String detectResolution(String filePath) {
         // Απλοποίηση: διαβάζουμε από το όνομα αρχείου
         String fname = new File(filePath).getName();
@@ -207,7 +193,6 @@ public class VideoConverter {
         return (res != null) ? res : "480p"; // default
     }
 
-    /** Επιστρέφει index ανάλυσης (0=240p ... 4=1080p) */
     private int resolutionIndex(String resolution) {
         for (int i = 0; i < RESOLUTIONS.length; i++) {
             if (RESOLUTIONS[i].equals(resolution)) return i;

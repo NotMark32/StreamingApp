@@ -21,7 +21,7 @@ public class StreamingServer {
     private ServerSocket serverSocket;
     private boolean running = false;
 
-    // Κρατάμε λίστα με ενεργούς clients (thread-safe)
+    // Κρατάμε λίστα με ενεργούς clients
     private final CopyOnWriteArrayList<ClientHandler> activeClients = new CopyOnWriteArrayList<>();
 
     public StreamingServer(int port, String videosFolder) {
@@ -29,12 +29,6 @@ public class StreamingServer {
         this.videosFolder = videosFolder;
     }
 
-    /**
-     * Εκκίνηση Server:
-     * 1. Τρέχει VideoConverter για να δημιουργήσει αρχεία
-     * 2. Ανοίγει ServerSocket
-     * 3. Περιμένει clients σε loop
-     */
     public void start() {
         logger.info("=== Streaming Server ξεκινάει (SSL/TLS) ===");
 
@@ -79,9 +73,6 @@ public class StreamingServer {
         }
     }
 
-    /**
-     * Διακοπή Server
-     */
     public void stop() {
         running = false;
         try {
@@ -98,9 +89,7 @@ public class StreamingServer {
         }
     }
 
-    /**
-     * Αφαίρεση client από τη λίστα όταν αποσυνδεθεί
-     */
+
     public void removeClient(ClientHandler client) {
         activeClients.remove(client);
         logger.info("Client αφαιρέθηκε. Ενεργοί clients: {}", activeClients.size());
@@ -111,7 +100,7 @@ public class StreamingServer {
     public List<VideoFile> getAvailableFiles() { return availableFiles; }
     public boolean isRunning() { return running; }
 
-    // ── Main για να τρέξεις μόνο τον Server ──────────────────────────
+    // Tρέξε μόνο τον Server
     public static void main(String[] args) {
         String videosFolder = "videos"; // φάκελος στο working directory
         StreamingServer server = new StreamingServer(Protocol.SERVER_PORT, videosFolder);
